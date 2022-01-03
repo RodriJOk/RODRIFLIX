@@ -1,5 +1,8 @@
 :root {
-	--rojo: #E50914;
+	--white-color: #fff;
+	--red-color: #E50914;
+	--black-color: #000;
+	--gray-color: #aaa;
 	--fondo: #141414;
 }
 
@@ -32,19 +35,19 @@ header .contenedor {
 header .logotipo {
 	font-family: 'Bebas Neue', cursive;
 	font-weight: normal;
-	color: var(--rojo);
+	color: var(--red-color);
 	font-size: 40px;
 }
 
 header nav a {
-	color: #AAA;
+	color: var(--gray-color);
 	text-decoration: none;
 	margin-right: 20px;
 }
 
 header nav a:hover,
 header nav a.activo {
-	color: #FFF;
+	color: var(--white-color);
 }
 
 /*--------------------------------Pelicula Principal ---------------------------------*/
@@ -52,7 +55,7 @@ header nav a.activo {
 .pelicula-principal {
 	font-size: 16px;
 	min-height: 40.62em;
-	color: #fff;
+	color: var(--white-color);
 	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../Imagenes/pelicula_principal.jpg);
 	background-position: center center;
 	background-size: cover;
@@ -83,11 +86,11 @@ header nav a.activo {
 }
 
 .pelicula-principal .boton {
-	background: rgba(0,0,0, 0.5);
+	background: var(--black-color);
 	border: none;
 	border-radius: 0.31em;
 	padding: 0.93em 1.87em;
-	color: #fff;
+	color: var(--white-color);
 	margin-right: 1.25em;
 	cursor: pointer;
 	transition: .3s ease all;
@@ -95,8 +98,8 @@ header nav a.activo {
 }
 
 .pelicula-principal .boton:hover {
-	background: #fff;
-	color: #000;
+	background: var(--white-color);
+	color: var(--black-color);
 }
 
 .pelicula-principal .boton i {
@@ -111,13 +114,13 @@ header nav a.activo {
 
 }
 .contenedor-titulo-controles h3{
-	color: #fff;
+	color: var(--white-color);
 	font-size: 30px;
 
 }
 
 .contenedor-titulo-controles .indicadores button{
-	background: #fff;
+	background: var(--white-color);
 	height: 3px;
 	width: 10px;
 	cursor: pointer;
@@ -127,7 +130,7 @@ header nav a.activo {
 
 .contenedor-titulo-controles .indicadores button:hover,
 .contenedor-titulo-controles .indicadores button.activo{
-	background: red;
+	background: var(--red-color);
 }
 /*-----------------------------------Contenedor Principal y Flechas----------------------*/ 
 
@@ -143,13 +146,13 @@ header nav a.activo {
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda, .peliculas-recomendadas .contenedor-principal .flecha-derecha{
 	position: absolute;
 	border: none;
-	background-color: rgba(0,0,0, .3);
+	background-color: var(--black-color);
 	font-size: 40px;
 	height: 50%;
 	top: calc(50%-15%);
 	line-height: 40px;
 	width: 50px;
-	color: #fff;
+	color: var(--white-color);
 	cursor: pointer;
 	z-index: 500;
 	transition: .2s ease all;
@@ -217,7 +220,6 @@ header nav a.activo {
 	}
 	.pelicula-principal .descripcion{
 		max-width: 100%;
-
 	}
 	
 	.peliculas-recomendadas .contenedor-carousel{
@@ -228,14 +230,11 @@ header nav a.activo {
 		display: grid;
 		grid-template-columns: repeat(3,1fr);
 		gap: 20px;
-
 	}
-
 
 	.peliculas-recomendadas .indicadores,
 	.peliculas-recomendadas .flecha-derecha,
 	.peliculas-recomendadas .flecha-izquierda{
 		display: none;
-
 	}
 }
