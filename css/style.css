@@ -196,6 +196,8 @@ header nav a.activo {
 .peliculas-recomendadas .contenedor-carousel .carousel .peliculas img{
 	width: 100%;
 	vertical-align: top;
+	object-fit: cover;
+	height: 100%;
 }
 
 
